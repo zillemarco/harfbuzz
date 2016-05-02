@@ -431,6 +431,7 @@ struct format_options_t : option_group_t
     show_unicode = false;
     show_line_num = false;
     show_extents = false;
+    show_flags = false;
 
     add_options (parser);
   }
@@ -472,6 +473,7 @@ struct format_options_t : option_group_t
   hb_bool_t show_unicode;
   hb_bool_t show_line_num;
   hb_bool_t show_extents;
+  hb_bool_t show_flags;
 };
 
 /* fallback implementation for scalbn()/scalbnf() for pre-2013 MSVC */
