@@ -389,7 +389,7 @@ endif ()
 ## Install
 if (NOT SKIP_INSTALL_HEADERS AND NOT SKIP_INSTALL_ALL)
 
-  file(GLOB private_headers "${PROJECT_SOURCE_DIR}/src/*-private.hh")
+  file(GLOB private_headers "${PROJECT_SOURCE_DIR}/src/*.hh")
 
   install(FILES ${project_headers} DESTINATION include/harfbuzz)
   install(FILES ${private_headers} DESTINATION include/harfbuzz)
